@@ -1,0 +1,42 @@
+body {
+  background-color: #1e1c1f;
+}
+
+.header {
+}
+
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.header__menu {
+  height: 56px;
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.header__menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.header__logo {
+}
+.header__profile {
+    display: flex;
+    gap: 16px;
+}
+.header__profile-img {
+}
