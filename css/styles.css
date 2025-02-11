@@ -91,7 +91,7 @@ body {
 
 .hero__title {
   font-size: 56px;
-  /* font-family: "Manrope", serif; */
+  font-family: "Cormorant", serif;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
@@ -124,6 +124,7 @@ body {
   font-style: italic;
   line-height: 38px;
   color: #fff;
+  font-family: "Cormorant", serif;
 }
 
 .hero__btn-small {
@@ -154,27 +155,30 @@ body {
 }
 
 .marquee-container {
-  margin: 80px 0 136px;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  background: transparent;
-  padding: 10px 0;
+  white-space: nowrap;
   position: relative;
+  margin: 80px 0 136px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .marquee-text {
   padding: 24px 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
   display: flex;
   width: max-content;
-  gap: 24px;
-  text-transform: uppercase;
-  color: #fff;
+  animation: marquee 10s linear infinite;
   font-size: 24px;
   font-weight: 600;
-  white-space: nowrap;
-  animation: marquee 10s linear infinite;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.marquee-text span {
+  display: inline-block;
+  padding-right: 50px; /* Отступ между повторяющимися блоками */
 }
 
 @keyframes marquee {
@@ -184,4 +188,65 @@ body {
   to {
     transform: translateX(-50%);
   }
+}
+
+.about {
+  background-image: url("../images/about-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+}
+
+.about__inner {
+  position: relative;
+  padding: 64px 0 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about__malmaran {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-family: "Cormorant", serif;
+  font-size: 128px;
+  font-weight: 600;
+  opacity: 0.3;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about__left {
+  max-width: 406px;
+}
+.about__text {
+  font-size: 20px;
+  line-height: 23px;
+}
+.about__right {
+  max-width: 416px;
+}
+
+.about__left p:first-child {
+  margin-top: 185px;
+}
+
+.about__right p:first-child {
+  margin-top: 56px;
+}
+
+.about__right p:nth-of-type(2) {
+  margin-top: 72px;
+}
+
+.about__title {
+  padding: 0;
+  margin: 0;
+  font-size: 56px;
+  line-height: 60px;
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
